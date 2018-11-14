@@ -1,0 +1,20 @@
+﻿@model IEnumerable<MVCSimple.Models.Publisher>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<h3>Hello There</h3>
+
+<h3>@ViewBag.myMessage</h3>
+
+@{ 
+
+    foreach (var item in Model)
+    {
+        <h3>From Class1: @item.Name @item.City</h3>
+    }
+}
